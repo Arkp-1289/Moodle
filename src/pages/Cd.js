@@ -1,7 +1,6 @@
 import React from 'react'
 import { useState } from 'react';
-import { Link } from 'react-router-dom'
-import { TbArrowBigLeftFilled } from "react-icons/tb";
+import Back from './Back';
 import Test from '../Test'
 
 const Cd = () => {
@@ -53,7 +52,7 @@ Blocks - Introduction to Global Data Flow Analysis- Peephole Optimization. </p>
       </div>
       <Test />
     </div>
-    <Link to='/oe'><p style={{ textAlign: 'center' }}><TbArrowBigLeftFilled /> Back</p></Link>
+    <Back/>
   </>
 }
 

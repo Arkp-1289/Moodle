@@ -1,11 +1,8 @@
 import React from 'react'
 import Units from './Units'
 import { useState } from 'react';
-import { Link } from 'react-router-dom'
-import { TbArrowBigLeftFilled } from "react-icons/tb";
-import Submit from './Submit';
+import Back from './Back';
 import Test from '../Test'
-
 const Cns = () => {
   const [selectedFile, setSelectedFile] = useState(null);
 
@@ -63,7 +60,7 @@ IP Security: Overview, IP Security Policy, Encapsulating Security Payload. </p>
 
      
     </div>  
-    <Link to='/'><p style={{ textAlign: 'center' }}><TbArrowBigLeftFilled /> Back</p></Link>
+    <Back/>
   </>
 }
 

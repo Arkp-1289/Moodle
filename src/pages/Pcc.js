@@ -1,6 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
-import { TbArrowBigLeftFilled } from "react-icons/tb";
+import Back from './Back';
 import { useState } from 'react';
 import Test from '../Test'
 
@@ -66,7 +65,7 @@ Architecture of Workflow Management Systems, Utilizing Clouds for Workflow Execu
 
       
     </div>
-    <Link to='/oe'><p style={{ textAlign: 'center' }}><TbArrowBigLeftFilled /> Back</p></Link>
+    <Back/>
   </>
 }
 

@@ -1,7 +1,6 @@
 import React from 'react'
 import { BrowserRouter as Router, Link } from 'react-router-dom'
-import { TbArrowBigLeftFilled } from "react-icons/tb";
-import Test from '../Test'
+import Back from './Back';
 
 const Pe = () => {
   return <>
@@ -17,7 +16,7 @@ const Pe = () => {
       <Link to='/sp' ><b>SOCKET PROGRAMMING</b></Link>
     </div>
   </div>
-    <Link to='/'><p style={{ textAlign: 'center' }}><TbArrowBigLeftFilled /> Back</p></Link>
+    <Back/>
   </>
 }
 

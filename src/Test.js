@@ -5,7 +5,7 @@ import {db} from '../src/firebase'
 import { getDownloadURL, uploadBytes, ref } from "firebase/storage";
 import { collection, addDoc, getDocs,query,where } from "firebase/firestore";
 import { v4 as uuidv4 } from 'uuid';
-import { useLocation } from 'react-router-dom';
+import { generatePath, useLocation } from 'react-router-dom';
 // import { uploadFile } from "./services/api";
 function Test(t) {
     const [files, setFiles] = useState();
@@ -58,25 +58,28 @@ function Test(t) {
     };
 
     return (
-        <div>
-            <center>
+        <div class="parent-container">
+            <div className="child-div">
+                <b><p style={{color:"green"}}>UPLOAD YOUR DOCS HERE</p></b>
+                <input type="file" onChange={(e) => setFiles(e.target.files[0])} />
+                {console.log(files)}
+                <button type="submit" onClick={submit}>
+                    Upload
+                </button>
+            </div>
+            <div  class="child-div">
+                <b><p style={{ color: "green" }}>DOWNLOAD DOCS</p></b>
             {data? data.map(e =>
+             
                 <table border={1}>
-                <tr>
-                    <th>Subject</th>
-                    <th>Url</th>
-                </tr>
+                   
                 <tr>
                         <td>{e.data.sub}</td>
                         <td><a href={e.data.url} download>download</a></td>
                 </tr>
             </table>):<h1>😅 Currently Not Avaliable!</h1>}
-            </center>
-            <input type="file" onChange={(e) => setFiles(e.target.files[0])} />
-            {console.log(files)}
-            <button type="submit" onClick={submit}>
-                Upload
-            </button>
+            </div>
+            
         </div>
     );
 }

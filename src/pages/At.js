@@ -1,8 +1,7 @@
 import React from 'react'
 import { useState } from 'react';
-import { Link } from 'react-router-dom'
-import { TbArrowBigLeftFilled } from "react-icons/tb";
 import Test from '../Test'
+import Back from './Back';
 
 const At = () => {
   const [selectedFile, setSelectedFile] = useState(null);
@@ -60,7 +59,7 @@ const At = () => {
 
       
     </div>
-    <Link to='/pe'><p style={{ textAlign: 'center' }}><TbArrowBigLeftFilled /> Back</p></Link>
+    <Back/>
   </>
 }
 

@@ -1,7 +1,6 @@
 import React from 'react'
 import { useState } from 'react';
-import { Link } from 'react-router-dom'
-import { TbArrowBigLeftFilled } from "react-icons/tb";
+import Back from './Back';
 import Test from '../Test'
 
 const Fsd = () => {
@@ -25,40 +24,45 @@ const Fsd = () => {
         <div className='syllabus'>
               <h2 style={{ margin: '2rem' }}>Syllabus</h2>
               <h4>UNIT-I</h4>
-              <p><b>Introduction</b>: Introduction to Selenium Structure Objectives What is Selenium?; Introducing
-                  Selenium, Brief History of The Selenium Project, Selenium’s Tool Suite, SeleniumIDE, Selenium
-                  RC, Selenium Web driver, Selenium Grid, Test Design Considerations<br />
+              <p><b>Introducing the Node.js-to-Angular Stack</b>: Understanding the Basic Web
+                  DevelopmentFramework, Understanding the Node.js-to-Angular StackComponents
+                  <br/><b>Getting Started with Node.js</b>:: Understanding Node.js, Installing Node.js, Working with Node
+                  Packages,Creating a Node.js Application, Writing Data to the Console<br/>
 
-                  <b>Preparing System and Application Under Test</b>:Structure Objectives Setting eclipse Create
-                  new Java project Adding Selenium jars Set browser drivers Walkthrough of BPB application Other
-                  applications
+                  <b>Angular.js</b>:Getting Started with Angular, Why Angular?, Understanding Angular, Separation of
+                  Responsibilities, Adding Angular to Your Environment, Using the Angular CLI, Creating a Basic
+                  Angular Application,Understanding and Using NgModule,
 
               </p>
               <h4>UNIT-II</h4>
-              <p>Web Driver, Web Element, and By Structure Objectives Web Driver and its purpose Set browser
-                  drivers Methods of Web Driver The Web Element interface Generic structure of Web Element
-                  Methods of Web Elements Exception with Web Elements About By class Methods in By class
-                  Understanding locators Exception with the By class
-                  Working with Web Elements—Form, Table, and Dropdown Structure Objectives Working with
-                  form elements working with Web Tables Working with dropdown
+              <p><b>Angular Components</b>:Component Configuration, Building a Template, Using Constructors, Using
+                  External Templates, Injecting Directives.<br/>
+                  <b>Expressions</b>Using Expressions, Using Pipes<br/>
+                  <b>Data Binding</b>: Understanding Data Binding<br />
+                  <b>Built-in Directives</b>: Understanding Directives, Using Built-in Directives
               </p>
               <h4>UNIT-III</h4>
-              <p>Working with Web Element—Alert, Frame, IFrame, and Window Structure Objectives Working
-                  with JavaScript alerts Working with Frame and IFrame Working with HTML window
-                  Extra Concepts— Actions, Screenshot, Web Driver Manager Introduction Structure Objectives
-                  Actions Screenshot Web Driver Manager</p>
+              <p>
+                  <b>Using Events, Listeners, Timers, and Callbacks in Node.js</b>:Node.js Event Model,Adding Work
+                  to the Event Queue, Implementing Callbacks<br/>
+                  <b>Implementing HTTP Services in Node.js</b>:Processing URLs, Understanding Request, Response,
+                  and Server Objects, Implementing HTTP Clients and Servers in Node.js, Implementing HTTPS
+                  Servers and Clients<br/>
+                  <b>Implementing Express in Node.js</b>:Getting Started with Express, Configuring Routes, Using
+                  Request/Responses Objects
+              </p>
               <h4>UNIT-IV</h4>
-              <p>What is Test NG Structure Objectives Introduction, Installation Structure Assertions in Test NG
-                  Result and reporting in Test NG Design Test NG test passing data in Test NG test
-                  Concept of Page Object Model Structure Objectives Page object model Implementing page object
-                  model Implementing page factory Structure Objectives Managing data using CSV Managing data
-                  using Excel Reading data from Excel file Using Excel reading function</p>
+              <p><b>Understanding NoSQL and MongoDB</b>: WhyNoSQL?, UnderstandingMongoDB, MongoDB Data
+                  Types;<br/>
+                  <b>Getting Started with MongoDB andNode.js</b>:Adding the MongoDB Driver to Node.js, Connecting
+                  to MongoDB from Node.js, the Objects Used in the MongoDB Node.js Driver,Accessing and
+                  Manipulating Databases</p>
 
         </div>
           <Test />
 
     </div>
-        <Link to='/'><p style={{ textAlign: 'center' }}><TbArrowBigLeftFilled /> Back</p></Link>
+        <Back/>
   </>
 }
 

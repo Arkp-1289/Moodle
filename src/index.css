@@ -125,15 +125,32 @@ width: 40%;
 }
 .file-input-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   width: 100%;
   max-width: 400px;
   margin: 0 auto;
 }
+.file-input {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  display: solid 1px red;
+  height:auto;
+  width:auto;
+  margin:auto
+  /* float: right; */
+}
+.parent-container {
+  display: flex;
+}
 
-
+.child-div {
+  flex-basis: 50%;
+  padding: 10px;
+  box-sizing: border-box;
+}
 
 /* 
 ====== 

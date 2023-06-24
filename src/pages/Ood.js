@@ -1,6 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
-import { TbArrowBigLeftFilled } from "react-icons/tb";
+import Back from './Back';
 import { useState } from 'react';
 import Test from '../Test'
 
@@ -62,7 +61,7 @@ const Ood = () => {
 
        
     </div>
-     <Link to='/pe'><p style={{ textAlign: 'center' }}><TbArrowBigLeftFilled /> Back</p></Link>
+     <Back/>
   </>
 }
 

@@ -1,7 +1,5 @@
 import React from 'react'
-import Units from './Units'
-import { Link } from 'react-router-dom'
-import { TbArrowBigLeftFilled } from "react-icons/tb";
+import Back from './Back';
 import { useState } from 'react';
 import Test from '../Test'
 const Ml = () => {
@@ -57,6 +55,7 @@ Bayes Optimal Classifier, Naïve-Bayes Classifier, Bayesian Belief Network.  </p
       
     </div>
     <Test/>
+    <Back/>
   </>
 }
 
