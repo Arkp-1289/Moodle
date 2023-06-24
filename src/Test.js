@@ -68,7 +68,6 @@ function Test(t) {
                 </button>
             </div>
             <div  class="child-div">
-                <b><p style={{ color: "green" }}>DOWNLOAD DOCS</p></b>
             {data? data.map(e =>
              
                 <table border={1}>
