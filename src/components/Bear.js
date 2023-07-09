@@ -17,7 +17,7 @@ function Bear() {
         alt="Bear saluting"
       />
           
-      <h1 >Welcome To My World</h1>
+      <h1 >Welcome buddy ❤</h1>
     </div>
   );
 }

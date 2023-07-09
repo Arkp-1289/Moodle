@@ -33,6 +33,7 @@ function Test(t) {
                 }))
                 setData(movs)
                 console.log(data)
+            
             })
     }
 
@@ -73,7 +74,7 @@ function Test(t) {
                 <table border={1}>
                    
                 <tr>
-                        <td>{e.data.sub}</td>
+                        <td>{e.id}</td>
                         <td><a href={e.data.url} download>download</a></td>
                 </tr>
             </table>):<h1>😅 Currently Not Avaliable!</h1>}
